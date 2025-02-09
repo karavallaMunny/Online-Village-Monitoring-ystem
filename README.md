@@ -1,1 +1,1 @@
-# Online-Village-Monitoring-ystem
+# Online Village Monitoring system
