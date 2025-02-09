@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+  
+  
+
+
+.container {
+  line-height: 200%;
+  min-width: 100vh;
+  
+  
+}
+
+.header h1 {
+  font-size: 30px;
+  font-family: system-ui;
+  color: white;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  padding: 35px 20px;
+  font-family: system-ui;
+}
+
+.header .social a {
+  padding: 0 5px;
+  color: #222222;
+}
+
+.left {
+  float: left;
+  width: 180px;
+  margin: 0;
+  padding: 1em;
+}
+
+.content {
+  margin-left: 190px;
+  border-left: 1px solid #d4d4d4;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://getwallpapers.com/wallpaper/full/c/d/c/301876.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+  font-family: system-ui;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #0033FF; /* Darker Blue */
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #004d00; /* Darker Green */
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1100px;
+  margin: 0 2px;
+  justify-content: center;
+  font-size: 18px;
+
+}
+
+td,
+th {
+  border: 1px solid #0033FF; /* Darker Blue */
+  padding: 8px;
+}
+
+th {
+  background-color: #0033FF; /* Darker Blue */
+  color: white;
+}
+
+tr td i.fas {
+  display: block;
+  font-size: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #0033FF; /* Darker Blue */
+  align-items: right;
+
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+ 
+  
+}
+.about-me{
+  align-items: center;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: white;
+  margin: 10px 0;
+ align-items: right;
+  
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Dropdown styling */
+#disease-dropdown {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #0033FF; /* Darker Blue border */
+  border-radius: 5px;
+}
+
+/* Prescription-like container styling */
+.prescription {
+  background-color: #f4f4f4; /* Light grey background */
+  border: 2px solid #0033FF; /* Darker Blue border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: none; /* Hidden by default */
+}
+
+.prescription p {
+  margin: 10px 0;
+}
+
+/* Adding darker blue to green gradient background for header and navigation */
+header.header {
+  background: linear-gradient(to right, #0033FF, #004d00); /* Darker Blue to Darker Green gradient background */
+  color: white;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 0;
+       padding: 15px;
+        /* Set the height of the header to 100% of the viewport height */
+       
+}
+
+header.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav.nav-items {
+  background: linear-gradient(to right,  #004d00); /* Darker Blue to Darker Green gradient background */
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav.nav-items a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav.nav-items a:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent white background on hover */
+  color: white; /* Blue color for text on hover */
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 10px 10px;
+  background-color: #004d00; /* Darker Green */
+  color: white;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  /* Adjust the width as needed */
+  margin: auto;
+  overflow: hidden;
+  
+  min-width: 50vh;
+ 
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ 
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+.slide img {
+
+  height: auto;
+  width:100%;
+  height: 100%;
+}
+
+
+.prev {
+  left: 50px;
+}
+
+.next {
+  right: 50px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Basic reset */
+
+
+/* Section styling */
+.content-section {
+  display: none; /* Hide the section by default */
+  padding: 2px;
+  max-width: 200%;
+  margin: 0 auto;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Input field styling */
+.form-control {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 4px;
+  margin-right: -1px; /* Adjusts spacing to connect with button */
+}
+
+/* Button styling */
+.btn-outline-secondary {
+  border: 1px solid green;
+  color: #495057;
+  background-color: green;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: green;
+  border-color: blue;
+}
+
+/* Adjusting spacing */
+.input-group-append {
+  margin-left: -1px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Input field styling */
+.form-control {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 4px;
+  margin-right: -1px; /* Adjusts spacing to connect with button */
+}
+
+/* Custom button styling */
+.submit-btn {
+  border: 1px solid green;
+  color: white;
+  background-color: green;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background-color: green;
+  border-color: blue;
+}
+
+/* Adjusting spacing */
+.input-group-append {
+  margin-left: -1px;
+}
+
+
+html {
+  height: 100%;
+
+}
+body {
+  min-height: 100%;
+  margin: 0;
+padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  min-width: 100%;
+  
+}
+.content {
+  flex: 1;
+}
+
+.news-container {
+  padding: 5px ;
+  margin: 50px auto;
+  min-width: 100vh;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #00ff00, #0000ff);
+  border-image-slice: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

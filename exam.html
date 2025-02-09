@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agriculture</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: blue;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: green;
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+     .news-item {
+        width: 80%; 
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        position: relative;
+        overflow: hidden; 
+    }
+
+    
+    .sliding-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap; 
+        animation: slideText 20s linear infinite;
+    }
+
+    
+    @keyframes slideText {
+        100% { left: -100%; } 
+    }
+  
+.left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color:  #0000FF  ;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #008000 ;
+      color: white;
+    }
+      #about{
+        width: 1000px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 270px;
+    }
+    
+       
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Agriculture</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="Query.html">Queries</a></li>
+        <li><a href="ContactUs.html">Contact</a></li>
+        <li><a href="index.html">Weather</a>
+    </ul>
+</nav>
+<img src="/Users/snehitha/Downloads/agriculture.jpg.avif" style="width:100%; height:200px;"/>
+<aside class="left">
+      
+      <ul>
+        <li><a class="active" href="mainpage.html">News</a></li>
+        <li><a href="crops.html"> Seasonal crops</a></li>
+        <li><a href="fertilizers.html">Fertilizers</a></li>
+         <li><a href="soil.html">Soil</a></li>
+      </ul>
+      <br><br>
+    </aside>
+   <div class="news-item">
+    <!-- Sliding text container -->
+    <div class="sliding-text">
+        News Item 1: This is a sliding text example for a news item. You can add more content as needed.
+    </div>
+</div>
+<section id="about">
+    <h3 style="color:orange;"><u>Our distant vision</u></h3>
+    <p>
+Our ambition is to make agriculture profitable  and to improve the living standards of the farmers of Nambur Village.</p>
+
+<h3 style="color:orange;"><u>Our will</u></h3>
+<p>* Strengthening the rural economy by providing high-demand services to farmers and helping them shift from subsistence agriculture to commercial agriculture without harming the balance of nature.<br>
+
+* To create profitable and sustainable agriculture  by promoting diversified crops, adding value to products and providing necessary market facilities.</p>
+
+<h3 style="color:orange;"><u>Our intentions</u></h3>
+<p>* To achieve a growth rate of 5 percent and above in agriculture by increasing crop production and productivity through effective technology transfer and adoption by farmers.<br>
+
+* To reduce cost of production through biological methods, increase farmers' agricultural income and empower farmers to use land and water resources sustainably.<br>
+
+* To review the performance of extension department staff to ensure that their performance is fruitful for the farmers and the cost of services is acceptable.</p>
+
+
+
+</section>
+
+
+
+<footer>
+    <p>&copy; 2023 Agriculture</p>
+</footer>
+</body>
+</html>

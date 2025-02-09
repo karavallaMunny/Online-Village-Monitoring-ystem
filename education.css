@@ -1,0 +1,515 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	/*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url(/Users/snehitha/Desktop/photos/collegelife.avif);*/
+	background-position: center;
+	background-image: #FAFAFA;
+	backdrop-filter: blur(8px);
+	background-size: cover;
+	position: relative;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+	background-color: #023047;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: rgb(255, 64, 0);
+}
+a
+{
+    text-decoration: none;
+   
+    color: rgb(182, 249, 255);
+    font-size: 28px;
+}
+#login-form
+{
+    display: none;
+}
+
+
+
+.cardtext {
+    max-width: 300px;
+    min-height: 200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  
+    max-width: 80%;
+    height: 300px;
+    padding: 35px;
+  
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  
+    backdrop-filter: blur(15px);
+  }
+  
+  .card-footer {
+    font-size: 0.65em;
+    color: #446;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+  }
+  
+  body .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 10px 0;
+  }
+  
+  body .container .card {
+	position: relative;
+	min-width: 320px;
+	height: 440px;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+	  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+	  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	margin: 30px;
+	transition: 0.5s;
+  }
+  
+  body .container .card:nth-child(1) .box .content a {
+	background: #2196f3;
+  }
+  
+  body .container .card:nth-child(2) .box .content a {
+	background: #2196f3;
+  }
+  
+  
+  body .container .card .box {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.5s;
+  }
+  
+  
+  body .container .card .box:hover {
+	transform: translateY(-50px);
+  }
+  
+  body .container .card .box:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.03);
+  }
+  
+  body .container .card .box .content {
+	padding: 20px;
+	position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  
+  
+  body .container .card .box .content h3 {
+	font-size: 1.8rem;
+	color: #07093a;
+	z-index: 1;
+	transition: 0.5s;
+	margin-bottom: 15px;
+  }
+  
+  body .container .card .box .content p {
+	font-size: 1rem;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+	transition: 0.5s;
+  }
+  
+  body .container .card .box .content a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	background: black;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	margin-top: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+  }
+  body .container .card .box .content a:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+	background: #fff;
+	color: #000;
+  }
+  #fcf-form {
+    display:block;
+}
+
+
+.fcf-body {
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+	margin: auto;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 80%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: auto;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+.news-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+}
+
+.news-container .title {
+    position: absolute;
+    background: blue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+}
+
+.news-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+
+    }
+}
+
+
+* {box-sizing: border-box}
+      
+      .images {display: none}
+      
+      img {
+      	vertical-align: middle;
+        width:100%;
+      }
+      
+      /* Slideshow container */
+      .carousel-container {
+         max-width: 1000px;
+         position: relative;
+         display: flex;
+         margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .previous, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         padding: 16px;
+         margin-top: -22px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+      }
+      
+      
+      /* Position the "next button" to the right */
+      .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+      }
+      
+      
+      /* On hover, add a black background color with a little bit seethrough */
+      .prev:hover, .next:hover {
+         background-color: rgba(0,0,0,0.8);
+      }
+      
+      
+      /* The dots/bullets/indicators */
+      .navigation-dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+      }
+      .active, .navigation-dot:hover {
+         background-color: #014379;
+      }
+
+      .google-map {
+        padding-bottom: 50%;
+        position: relative;
+        margin-top: 10%;
+        align-content: center;
+        
+   }
+   .google-map1 iframe {
+        height: 300px;
+        width: 700px;
+        margin-right: 50px;
+        border:3px #000;
+        border-radius: 10;
+        right: 0;
+        top: 0;
+        position: absolute;
+   }
+
+   

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+            body {
+            background: #F7F9F9;
+                }
+
+                .back-home {
+                    margin-left: 30px;
+                    position: fixed;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #20409f;
+                    font-size: 1.5em;
+                    transition: color 0.3s;
+                }
+                
+                .back-home:hover {
+                    color: #000000;
+                }
+                
+                .back-home i {
+                    margin-right: 0.2rem;
+                    margin-top: 0;
+                    font-size: 40px;
+                }    
+            #container{
+                box-shadow: 0 15px 30px 1px grey;
+                background: rgba(255, 255, 255, 0.90);
+                text-align: center;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 5em auto;
+                height: 300px;
+                width: 85%;
+            
+                
+            }
+
+            .product-details {
+                position: relative;
+                text-align: left;
+                overflow: hidden;
+                padding: 30px;
+                height: 100%;
+                float: left;
+                width: 40%;
+
+            }
+
+            #container .product-details h1{
+                font-family: 'Bebas Neue', cursive;
+                display: inline-block;
+                position: relative;
+                font-size: 30px;
+                color: #344055;
+                margin: 0;
+                
+            }
+
+            #container .product-details h1:before{
+                position: absolute;
+                content: '';
+                right: 0%; 
+                top: 0%;
+                transform: translate(25px, -15px);
+                font-family: sans-serif;
+                display: inline-block;
+                background: #ffe6e6;
+                border-radius: 5px;
+                font-size: 14px;
+                padding: 5px;
+                color: white;
+                margin: 0;
+                animation: chan-sh 6s ease infinite;
+
+            }
+            #container .product-details > p {
+            font-family: 'EB Garamond', serif;
+                text-align: center;
+                font-size: 18px;
+                color: #7d7d7d;
+                
+            }
+            .control{
+                position: absolute;
+                bottom: 20%;
+                left: 22.8%;
+                
+            }
+            .btn {
+
+                transform: translateY(0px);
+                transition: 0.3s linear;
+                background:  #20409f;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                color: #eee;
+                padding: 0;
+                margin-left: 100px;
+                margin-bottom: 30px;	
+            }
+
+            .btn:hover{transform: translateY(-6px);
+                background: #1a66ff;}
+
+            .btn span {
+                font-family: 'EB Garamond', serif;
+                transition: transform 0.3s;
+                display: inline-block;
+            padding: 10px 20px;
+                font-size: 1.2em;
+                margin:0;
+                
+            }
+            .btn .buy {z-index: 3; font-weight: bolder;}
+
+            .product-image {
+                transition: all 0.3s ease-out;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                height: 100%;
+                float: right;
+                width: 45%;
+                display: inline-block;
+            }
+
+            #container img {width: 100%;height: 100%;}
+
+            .info {
+                background: rgba(27, 26, 26, 0.9);
+                font-family: sans-serif;
+                transition: all 0.3s ease-out;
+                transform: translateX(-100%);
+                position: absolute;
+                line-height: 1.8;
+                text-align: left;
+                font-size: 105%;
+                color: #FFF;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            .info h2 {text-align: center}
+            .product-image:hover .info{transform: translateX(0);}
+
+            .info ul li{transition: 0.3s ease;}
+            .info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+            .product-image:hover img {transition: all 0.3s ease-out;}
+            .product-image:hover img {transform: scale(1.2, 1.2);}
+        </style>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div><a href="education.html" class="back-home">
+            <i class='bx bx-arrow-back'></i></a></div>
+    
+        <div style="margin-top: 20px;">
+            <h5 style="color:#20409f; text-align: center; font-size:40px; font-family: 'Bebas Neue', cursive;">List of Colleges with information around village</h5>
+        </div>
+        <section>
+                    <div id="container">	 
+            <div class="product-details">         
+                <h1>Vasireddy Venkatadri Institute of Technology</h1>
+                <p class="information">It has a capacity of 930 students for undergraduate engineering programs (B.Tech), 120 students in six Master of Technology programs and 60 students in a Master of Computer Applications program</p>            
+                <div class="control">
+                    <button class="btn">
+                        <span class="buy">Visit Website</span>
+                    </button>
+                </div>               
+            </div>            
+            <div class="product-image">    
+                <img src="/Users/snehitha/Downloads/VVIT.jpg" alt="">
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Location : </strong>Nambur </li>
+                        <li><strong>Affiliated to : </strong>Jawaharlal Nehru Technological University, Kakinada</li>
+                        <li><strong>Strength: </strong>3000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">	 
+            <div class="product-details">         
+                <h1>Acharya Nagarjuna University</h1>
+                <p class="information">The university was established as Nagarjuna University by Act 43 of 1976 of A. P. State Legislature and Governed by Act 4 of 1991 covering 6 Universities of the State</p>            
+                <div class="control">
+                    <button class="btn">
+                        <span class="buy">Visit Website</span>
+                    </button>
+                </div>               
+            </div>            
+            <div class="product-image">    
+                <img src="/Users/snehitha/Downloads/AcharyaNagarjunaUniversity.jpg" alt="">
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Location : </strong>Nambur </li>
+                        <li><strong>Affiliated to : </strong>ANU</li>
+                        <li><strong>Strength: </strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">	 
+            <div class="product-details">         
+                <h1>Sibar Institute of Dental Sciences</h1>
+                <p class="information">SIDS is recognized by the Dental Council of India and the Ministry of Health & Family Welfare, Govt. of India and is affiliated to Dr. Y.S.R University of Health Sciences, one of the finest universities in Health Care Education</p>            
+                <div class="control">
+                    <button class="btn">
+                        <span class="buy">Visit Website</span>
+                    </button>
+                </div>               
+            </div>            
+            <div class="product-image">    
+                <img src="/Users/snehitha/Downloads/sibar-institute-of-dental-sciences-guntur-ho-guntur-colleges-qw2x66z.jpg.avif" alt="">
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Location : </strong>Takkellapadu</li>
+                        <li><strong>Affiliated to : </strong>University</li>
+                        <li><strong>Strength: </strong>1000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">	 
+            <div class="product-details">         
+                <h1>National Institue of Design</h1>
+                <p class="information">The National Institute of Design, Andhra Pradesh is a design school in Guntur District, India. The institute started functioning on 7 September 2015</p>            
+                <div class="control">
+                    <button class="btn">
+                        <span class="buy">Visit Website</span>
+                    </button>
+                </div>               
+            </div>            
+            <div class="product-image">    
+                <img src="/Users/snehitha/Downloads/NationalInstituteofDesign.jpeg" alt="">
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Location : </strong>Sakhmuru</li>
+                        <li><strong>Affiliated to : </strong>NID</li>
+                        <li><strong>Strength: </strong>2000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">	 
+            <div class="product-details">         
+                <h1>SIMS College of Nursing</h1>
+                <p class="information">Started with a modest beginning in 1978, SIMS now cumulated into group of institutions whose Endeavour is to run institutions that achieve highest levels of education.</p>            
+                <div class="control">
+                    <button class="btn">
+                        <span class="buy">Visit Website</span>
+                    </button>
+                </div>               
+            </div>            
+            <div class="product-image">    
+                <img src="/Users/snehitha/Downloads/SIMS-College-of-Nursing-Guntur.webp" alt="">
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Location : </strong>Guntur - Vijayawada Hwy </li>
+                        <li><strong>Affiliated to : </strong>University</li>
+                        <li><strong>Strength: </strong>2000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </body>
+</html>
